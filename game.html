@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Mario's Maze</title>
+  <link rel="shortcut icon" type="image/png" href="img/mario-star.png"/>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.cdnfonts.com/css/new-super-mario-font-u" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+	<div class="mbox">
+	<span style="color:#FF0000; position:absolute; left:40%; margin: 15px; font-family:New Super Mario Font U; font-size:20px">M</span>
+	<span style="color:#42b032; position:absolute; left:42%; margin: 15px; font-family:New Super Mario Font U; font-size:17px">a</span>
+	<span style="color:#FCD000; position:absolute; left:44%; margin: 15px; font-family:New Super Mario Font U; font-size:20px">R</span>
+	<span style="color:#009CDA; position:absolute; left:46%; margin: 15px; font-family:New Super Mario Font U; font-size:17px">i</span>
+	<span style="color:#42b032; position:absolute; left:48%; margin: 15px; font-family:New Super Mario Font U; font-size:20px">O</span>
+	<span style="color:#009CDA; position:absolute; left:50%; margin: 15px; font-family:New Super Mario Font U; font-size:17px">'S</span>
+
+	<span style="color:#FCD000; position:absolute; left:53%; margin: 15px; font-family:New Super Mario Font U; font-size:20px">M</span>
+	<span style="color:#009CDA; position:absolute; left:55%; margin: 15px; font-family:New Super Mario Font U; font-size:17px">a</span>
+	<span style="color:#42b032; position:absolute; left:57%; margin: 15px; font-family:New Super Mario Font U; font-size:20px">Z</span>
+	<span style="color:#FF0000; position:absolute; left:59%; margin: 15px; font-family:New Super Mario Font U; font-size:17px">e</span>
+
+	<div id="timerel"></div>
+	
+	<div id="maze">
+		<div id="thingie">
+			<div class="emo" id="emo"><img src="img/mario.png" class="emo"></div>
+		</div>
+		<div id="home">
+			<div class="emo"><img src="img/star.png" class="emo"></div>
+		</div>
+		<div class="barrier" id="top"></div>
+		<div class="barrier" id="bottom"></div>
+	</div>
+		</div>
+	<div class="controls">
+		<div class="buttons">
+			<button class="btn" id="bu"><div class="chevron">↑</div></button>
+			<button class="btn" id="bd"><div class="chevron">↓</div></button>
+			<button class="btn" id="bl"><div class="chevron">←</div></button>
+			<button class="btn" id="br"><div class="chevron">→</div></button>
+		</div>
+	</div>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2 class="gamehead"></h2>
+				<div  class="modal-img">
+					<img id="modal-img" src="img/end.png" alt="resultado">
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div>
+					<h2 class="msgEnd" id="msgEnd"></h2>
+				</div>
+				<h2 id="demo" onmouseover="" style="cursor:pointer;" class="modfooter">Play Again?</h2>
+			</div>
+		</div>
+	</div>
+</div>
+  <script  src="./script.js"></script>
+
+</body>
+</html>

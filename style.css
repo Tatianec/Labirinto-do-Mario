@@ -1,0 +1,292 @@
+body {
+	touch-action: pan-y;
+	zoom: 140%;
+	background-color: #aecbec48;
+	margin: 0;
+	padding: 0%;
+	font-family: 'New Super Mario Font U'; 
+}
+
+#logo{
+	margin-top: 10px;
+	width: 50%;
+	height: 20%;
+	padding-left: 20%;
+	text-align: center;
+}
+.pageHome{
+	text-align: center;
+	color: white;
+}
+
+.msgEnd{
+	text-align: center;
+	width: 80%;
+	height: 20px;
+	margin: 0;
+	color: white;
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+h2{
+	font-size:40px;
+	padding: 10px;
+	color: #228B22;
+}
+
+p{
+	font-size:22px;
+	padding-right: 20px;
+	color: #000080ce;
+}
+
+a{
+	color: #D2691E;
+	font-size: 40px;
+	text-align: center;
+	border-radius: 4px;
+	margin-left: 45%;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #27af3e;
+	display: grid;
+	grid-template-rows: 60% 40%;
+}
+
+#maze {
+	position: absolute;
+	width: 350px;
+	height: 250px;
+	background: #27af3e;
+	top: 35vh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#timerel{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 45px;
+	margin-bottom: 10px;
+	text-align: center;
+	width: 40%;
+	height: 18%;
+	font-size: large; 
+	color: aliceblue;
+}
+
+.mbox,
+.controls {
+	height: 100%;
+	background: #222;
+	display: grid;
+	margin-bottom: 0px;
+}
+
+.buttons {
+	width: 180px;
+	height: 85px;
+	background: #222;
+	align-self: center;
+	justify-self: center;
+	display: grid;
+	grid-template-rows: 60px 30px;
+	grid-template-columns: 20px 70px 20px;
+	margin-top: 70px;
+	margin-bottom: 0%;
+	margin-left: 8%;
+}
+
+.btn {
+	width: 40px;
+	height: 40px;
+	border: 2px #fff solid;
+	border-bottom: 1px #fff solid;
+	align-self: center;
+	justify-self: center;
+	cursor: pointer;
+	border-radius: 8px;
+	display: grid;
+}
+.chevron {
+	height: 10px;
+	width: 10px;
+	align-self: center;
+	justify-self: center;
+	color: rgb(15, 15, 15);
+	font-size: 20px;
+	line-height: 10px;
+	text-align: center;
+	color: #fff;
+}
+
+#bu {
+	grid-column-start: 2;
+}
+#bd {
+	grid-column-start: 2;
+	grid-row-start: 2;
+}
+#bl {
+	grid-column-start: 1;
+	grid-row-start: 2;
+}
+#br {
+	grid-column-start: 3;
+	grid-row-start: 2;
+}
+
+#thingie,
+#home {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+
+}
+
+.emo {
+	position: absolute;
+	top: 2px;
+	left: 1px;
+	width: 18px;
+	height: 18px;
+	border-radius: 25px;
+	font-size: 15px;
+	line-height: 10px;
+	text-align: left;
+}
+
+.barrier {
+	position: absolute;
+	background: rgb(75, 50, 4);
+	border: 7px;
+}
+
+#top {
+	top: 20px;
+	left: 20px;
+	width: 300px;
+	height: 6px;
+}
+
+#bottom {
+	top: 220px;
+	left: 20px;
+	width: 302px;
+	height: 6px;
+}
+
+button {
+	display: inline-block;
+	border: none;
+	padding: none;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+button:hover,
+button:focus {
+	-webkit-appearance: none;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:active {
+	transform: scale(1);
+	-webkit-appearance: none;
+}
+.gamehead{
+	text-align: center;
+	color: white;
+	width: 100%;
+	margin: 0 0;
+	padding: 0;
+}
+
+.modfooter{
+	color: white;
+	width: 90%;
+	margin: 0 0;
+	padding: 20px;
+	margin-top: 10px;
+}
+.myModal{
+	width: 80%;
+}
+
+.modal {
+	display: none;
+	position: absolute; 
+	z-index: 1;
+	padding-top: 20px;
+	left: 30%;
+	top: 0;
+	width: 100%; 
+	height: 90%; 
+	overflow: auto; 
+}
+
+.modal-content {
+	position: fixed;
+	background-color: #fefefe;
+	margin: auto;
+	border: 0px solid #888;
+	margin-top: 0;
+	box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2),0 60px 50px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.6s;
+	animation-name: animatetop;
+	animation-duration: 0.6s
+}
+.modal-img{
+	width: 100%;
+	height: 65%;
+}
+#modal-img{
+	padding-top: 0;
+	width: 120px;
+	height: 100%;
+	margin-left: 30px;
+	margin-bottom: 0px;
+	margin-top: 0;
+}
+
+.modal-header {
+	padding: 2px 0px;
+	background-color: #e73c26;
+	text-align: center;
+	height : 200px;
+	width: 400px;
+}
+
+.modal-body {padding: 0px 0px;}
+
+.modal-footer {
+	padding: 2px 0px;
+	background-color:#426bf4;
+	text-align: center;
+	height : 150px;
+	width: 400px;
+}
+
+.final{
+	width: 10px;
+	text-align: center;
+}
